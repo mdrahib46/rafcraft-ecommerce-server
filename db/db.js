@@ -19,6 +19,7 @@ if (!dbUrl) {
     new Error("Mongo url not set in env file");
 }
 
+
 mongoose.connect(
     dbUrl,
     {

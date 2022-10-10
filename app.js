@@ -12,7 +12,7 @@ app.use(morgan('dev'));
 
 
 // routes middlewares
-app.use('/api', routes);
+app.use('/api/v1', routes);
 
 
 module.exports = app;

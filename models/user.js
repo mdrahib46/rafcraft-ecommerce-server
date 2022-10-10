@@ -29,6 +29,7 @@ const uesrSchema = new Schema({
         default: 'user',
         enum: ['user', 'admin']
     },
+    picture: String,
     birthday: String,
     gender: String,
     phoneNumber: String,

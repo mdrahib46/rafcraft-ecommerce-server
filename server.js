@@ -1,22 +1,10 @@
-const express = require('express');
-const app = express();
-const cors = require('cors');
-const morgan = require('morgan');
-const routes = require('./routes/index');
+const app = require('./app');
+const dotenv = require("dotenv");
+dotenv.config();
+
 
 // db
 const db = require('./db/db');
-
-
-// middlewares
-app.use(express.json());
-app.use(cors());
-app.use(morgan('dev'));
-
-
-// routes middlewares
-app.use('/api', routes);
-
 
 // server configuration
 const port = process.env.PORT || 8000;
